@@ -16,7 +16,7 @@
 	// "forwardPorts": [],
 
         "postStartCommand": "nohup bash -c 'gadgetron >& /tmp/gadgetron.log &'",
-	"initializeCommand": "docker system prune --force"
+	"initializeCommand": "docker system prune --all --force"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
