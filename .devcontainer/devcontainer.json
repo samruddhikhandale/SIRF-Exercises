@@ -13,7 +13,9 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-        "postStartCommand": "nohup bash -c 'gadgetron >& /tmp/gadgetron.log &'"
+        "postStartCommand": "nohup bash -c 'gadgetron >& /tmp/gadgetron.log &'",
+	"initializeCommand": "docker system prune"
+
 	// Configure tool-specific properties.
 	// "customizations": {},
 
